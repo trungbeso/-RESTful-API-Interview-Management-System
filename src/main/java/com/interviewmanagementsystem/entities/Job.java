@@ -1,7 +1,7 @@
 package com.interviewmanagementsystem.entities;
 
-import com.ninja_in_pyjamas.enums.JobStatus;
-import com.ninja_in_pyjamas.enums.Level;
+import com.interviewmanagementsystem.enums.JobStatus;
+import com.interviewmanagementsystem.enums.Level;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

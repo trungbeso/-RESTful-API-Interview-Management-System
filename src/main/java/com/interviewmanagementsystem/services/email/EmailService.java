@@ -1,8 +1,8 @@
 package com.interviewmanagementsystem.services.email;
 
-import com.ninja_in_pyjamas.dtos.email.EmailRequestDTO;
-import com.ninja_in_pyjamas.exceptions.AppException;
-import com.ninja_in_pyjamas.exceptions.ErrorCode;
+import com.interviewmanagementsystem.dtos.email.EmailRequestDTO;
+import com.interviewmanagementsystem.exceptions.AppException;
+import com.interviewmanagementsystem.exceptions.ErrorCode;
 import jakarta.mail.MessagingException;
 import jakarta.mail.internet.MimeMessage;
 import lombok.AccessLevel;

@@ -1,8 +1,9 @@
 package com.interviewmanagementsystem.mapper;
 
-import com.ninja_in_pyjamas.dtos.departments.DepartmentCreateUpdateDTO;
-import com.ninja_in_pyjamas.dtos.departments.DepartmentDTO;
-import com.ninja_in_pyjamas.entities.Department;
+
+import com.interviewmanagementsystem.dtos.departments.DepartmentCreateUpdateDTO;
+import com.interviewmanagementsystem.dtos.departments.DepartmentDTO;
+import com.interviewmanagementsystem.entities.Department;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingConstants;
 import org.mapstruct.MappingTarget;

@@ -1,7 +1,9 @@
 package com.interviewmanagementsystem.controllers;
 
-import com.ninja_in_pyjamas.dtos.benefits.BenefitDTO;
-import com.ninja_in_pyjamas.services.benefit.BenefitService;
+
+
+import com.interviewmanagementsystem.dtos.benefits.BenefitDTO;
+import com.interviewmanagementsystem.services.benefit.BenefitService;
 import io.swagger.v3.oas.annotations.parameters.RequestBody;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

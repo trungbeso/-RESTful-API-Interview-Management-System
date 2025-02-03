@@ -1,6 +1,6 @@
 package com.interviewmanagementsystem.configuration;
 
-import com.ninja_in_pyjamas.services.auth.token.ITokenService;
+import com.interviewmanagementsystem.services.auth.token.ITokenService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;

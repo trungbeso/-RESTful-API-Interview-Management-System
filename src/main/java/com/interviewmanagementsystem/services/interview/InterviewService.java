@@ -1,33 +1,5 @@
 package com.interviewmanagementsystem.services.interview;
 
-import com.ninja_in_pyjamas.dtos.email.EmailRequestDTO;
-import com.ninja_in_pyjamas.dtos.interviews.InterviewCreateUpdateDTO;
-import com.ninja_in_pyjamas.dtos.interviews.InterviewDTO;
-import com.ninja_in_pyjamas.entities.Candidate;
-import com.ninja_in_pyjamas.entities.Employee;
-import com.ninja_in_pyjamas.entities.InterviewSchedule;
-import com.ninja_in_pyjamas.entities.Job;
-import com.ninja_in_pyjamas.enums.CandidateStatus;
-import com.ninja_in_pyjamas.enums.InterviewResult;
-import com.ninja_in_pyjamas.enums.InterviewStatus;
-import com.ninja_in_pyjamas.exceptions.ResourceNotFoundException;
-import com.ninja_in_pyjamas.mapper.InterviewMapper;
-import com.ninja_in_pyjamas.repositories.ICandidateRepository;
-import com.ninja_in_pyjamas.repositories.IEmployeeRepository;
-import com.ninja_in_pyjamas.repositories.IInterviewRepository;
-import com.ninja_in_pyjamas.repositories.IJobRepository;
-import com.ninja_in_pyjamas.services.email.IEmailService;
-import jakarta.persistence.criteria.Join;
-import jakarta.persistence.criteria.JoinType;
-import jakarta.persistence.criteria.Predicate;
-import jakarta.transaction.Transactional;
-import lombok.RequiredArgsConstructor;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.jpa.domain.Specification;
-import org.springframework.scheduling.annotation.Scheduled;
-import org.springframework.stereotype.Service;
-
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
@@ -37,6 +9,38 @@ import java.util.Map;
 import java.util.Set;
 import java.util.UUID;
 import java.util.stream.Collectors;
+
+import com.interviewmanagementsystem.dtos.email.EmailRequestDTO;
+import com.interviewmanagementsystem.dtos.interviews.InterviewCreateUpdateDTO;
+import com.interviewmanagementsystem.dtos.interviews.InterviewDTO;
+import com.interviewmanagementsystem.entities.Candidate;
+import com.interviewmanagementsystem.entities.Employee;
+import com.interviewmanagementsystem.entities.InterviewSchedule;
+import com.interviewmanagementsystem.entities.Job;
+import com.interviewmanagementsystem.enums.CandidateStatus;
+import com.interviewmanagementsystem.enums.InterviewResult;
+import com.interviewmanagementsystem.enums.InterviewStatus;
+import com.interviewmanagementsystem.exceptions.ResourceNotFoundException;
+
+import com.interviewmanagementsystem.mapper.InterviewMapper;
+import com.interviewmanagementsystem.repositories.ICandidateRepository;
+import com.interviewmanagementsystem.repositories.IEmployeeRepository;
+import com.interviewmanagementsystem.repositories.IInterviewRepository;
+import com.interviewmanagementsystem.repositories.IJobRepository;
+import com.interviewmanagementsystem.services.email.IEmailService;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.domain.Specification;
+import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.stereotype.Service;
+
+
+
+import jakarta.persistence.criteria.Join;
+import jakarta.persistence.criteria.JoinType;
+import jakarta.persistence.criteria.Predicate;
+import jakarta.transaction.Transactional;
+import lombok.RequiredArgsConstructor;
 
 @Service
 @Transactional
@@ -49,18 +53,18 @@ public class InterviewService implements IInterviewService {
     private final InterviewMapper interviewMapper;
     private final IEmailService emailService;
 
-    @Override
+	@Override
     public List<InterviewDTO> getAll() {
         return interviewRepository.findAll().stream()
-                .map(interviewMapper::toDTO)
-                .toList();
+             .map(interviewMapper::toDTO)
+             .toList();
     }
 
     @Override
     public InterviewDTO findById(UUID id) {
         InterviewSchedule interview = interviewRepository.findById(id)
-                .orElseThrow(() -> new ResourceNotFoundException("Interview not found"));
-       
+             .orElseThrow(() -> new ResourceNotFoundException("Interview not found"));
+
         return interviewMapper.toDTO(interview);
     }
 
@@ -71,8 +75,8 @@ public class InterviewService implements IInterviewService {
         }
 
         Set<Employee> interviewers = dto.getInterviewerIds().stream()
-                .map(id -> employeeRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Interviewer not found")))
-                .collect(Collectors.toSet());
+             .map(id -> employeeRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Interviewer not found")))
+             .collect(Collectors.toSet());
 
         if (interviewers.isEmpty()) {
             throw new ResourceNotFoundException("Interviewer not found");
@@ -106,7 +110,7 @@ public class InterviewService implements IInterviewService {
         candidate.setStatus(CandidateStatus.WAITING_FOR_INTERVIEW);
         candidateRepository.save(candidate);
 
-       return interviewMapper.toDTO(savedInterview);
+        return interviewMapper.toDTO(savedInterview);
     }
 
     @Override
@@ -116,11 +120,11 @@ public class InterviewService implements IInterviewService {
         }
 
         InterviewSchedule existingInterview = interviewRepository.findById(id)
-                .orElseThrow(() -> new ResourceNotFoundException("Interview not found"));
+             .orElseThrow(() -> new ResourceNotFoundException("Interview not found"));
 
         Set<Employee> interviewers = dto.getInterviewerIds().stream()
-                .map(interviewerId -> employeeRepository.findById(interviewerId).orElseThrow(() -> new ResourceNotFoundException("Interviewer not found")))
-                .collect(Collectors.toSet());
+             .map(interviewerId -> employeeRepository.findById(interviewerId).orElseThrow(() -> new ResourceNotFoundException("Interviewer not found")))
+             .collect(Collectors.toSet());
 
         if (interviewers.isEmpty()) {
             throw new ResourceNotFoundException("Interviewer not found");
@@ -148,7 +152,7 @@ public class InterviewService implements IInterviewService {
     @Override
     public boolean delete(UUID id) {
         InterviewSchedule interview = interviewRepository.findById(id)
-                .orElseThrow(() -> new ResourceNotFoundException("Interview not found"));
+             .orElseThrow(() -> new ResourceNotFoundException("Interview not found"));
         interviewRepository.delete(interview);
         return !interviewRepository.existsById(id);
     }
@@ -175,7 +179,7 @@ public class InterviewService implements IInterviewService {
             }
 
             query.distinct(true);
-            
+
             return predicate;
         };
 
@@ -189,8 +193,8 @@ public class InterviewService implements IInterviewService {
         }
 
         InterviewSchedule interview = interviewRepository.findById(id)
-                .orElseThrow(() -> new ResourceNotFoundException("Interview not found"));
-        
+             .orElseThrow(() -> new ResourceNotFoundException("Interview not found"));
+
         interview.setStatus(status);
         InterviewSchedule updatedInterview = interviewRepository.save(interview);
 
@@ -210,9 +214,9 @@ public class InterviewService implements IInterviewService {
         if (result == null) {
             throw new IllegalArgumentException("Result cannot be null");
         }
-        
+
         InterviewSchedule interview = interviewRepository.findById(id)
-                .orElseThrow(() -> new ResourceNotFoundException("Interview not found"));
+             .orElseThrow(() -> new ResourceNotFoundException("Interview not found"));
 
         interview.setResult(result);
         interview.setNote(note);
@@ -231,7 +235,7 @@ public class InterviewService implements IInterviewService {
             candidateRepository.save(candidate);
         }
 
-       return interviewMapper.toDTO(updatedInterview);
+        return interviewMapper.toDTO(updatedInterview);
     }
 
     @Scheduled(cron = "0 0 8 * * ?") // Executes at 8:00 AM every day
@@ -249,14 +253,14 @@ public class InterviewService implements IInterviewService {
     @Override
     public void sendReminderEmail(UUID interviewId) {
         InterviewSchedule interview = interviewRepository.findById(interviewId)
-            .orElseThrow(() -> new ResourceNotFoundException("Interview not found"));
+             .orElseThrow(() -> new ResourceNotFoundException("Interview not found"));
 
 
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("EEEE, MMMM d, yyyy 'at' h:mm a z").withZone(ZoneId.systemDefault());
 
         // Format the start time
         String formattedStartTime = formatter.format(interview.getStartTime());
-    
+
 
         // Compose the email for each interviewer
         interview.getInterviewers().forEach(interviewer -> {
@@ -265,10 +269,10 @@ public class InterviewService implements IInterviewService {
             emailRequest.setSubject("Reminder: Interview Scheduled");
             emailRequest.setTemplateName("interview-reminder");
             emailRequest.setVariables(Map.of(
-                "interviewerName", interviewer.getFullName(),
-                "candidateName", interview.getCandidate().getFullName(),
-                "jobTitle", interview.getJob().getTitle(),
-                "schedule", formattedStartTime
+                 "interviewerName", interviewer.getFullName(),
+                 "candidateName", interview.getCandidate().getFullName(),
+                 "jobTitle", interview.getJob().getTitle(),
+                 "schedule", formattedStartTime
             ));
             emailService.sendEmailAsync(emailRequest);
         });

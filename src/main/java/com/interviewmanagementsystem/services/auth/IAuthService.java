@@ -1,9 +1,9 @@
 package com.interviewmanagementsystem.services.auth;
 
-import com.ninja_in_pyjamas.dtos.auth.PasswordResetRequestDTO;
-import com.ninja_in_pyjamas.dtos.auth.RegisterRequestDTO;
-import com.ninja_in_pyjamas.dtos.employees.response.EmployeeInformationDTO;
-import com.ninja_in_pyjamas.services.employee.ChangePasswordRequestDTO;
+import com.interviewmanagementsystem.dtos.auth.PasswordResetRequestDTO;
+import com.interviewmanagementsystem.dtos.auth.RegisterRequestDTO;
+import com.interviewmanagementsystem.dtos.employees.response.EmployeeInformationDTO;
+import com.interviewmanagementsystem.services.employee.ChangePasswordRequestDTO;
 
 import java.util.UUID;
 

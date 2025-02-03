@@ -1,15 +1,15 @@
 package com.interviewmanagementsystem.services.candidate;
 
-import com.ninja_in_pyjamas.dtos.candidates.CandidateCreateUpdateDTO;
-import com.ninja_in_pyjamas.dtos.candidates.CandidateDTO;
-import com.ninja_in_pyjamas.entities.Candidate;
-import com.ninja_in_pyjamas.entities.Employee;
-import com.ninja_in_pyjamas.enums.CandidateStatus;
-import com.ninja_in_pyjamas.exceptions.ResourceNotFoundException;
-import com.ninja_in_pyjamas.mapper.CandidateMapper;
-import com.ninja_in_pyjamas.repositories.ICandidateRepository;
-import com.ninja_in_pyjamas.repositories.IEmployeeRepository;
-import com.ninja_in_pyjamas.repositories.ISkillRepository;
+import com.interviewmanagementsystem.dtos.candidates.CandidateCreateUpdateDTO;
+import com.interviewmanagementsystem.dtos.candidates.CandidateDTO;
+import com.interviewmanagementsystem.entities.Candidate;
+import com.interviewmanagementsystem.entities.Employee;
+import com.interviewmanagementsystem.enums.CandidateStatus;
+import com.interviewmanagementsystem.exceptions.ResourceNotFoundException;
+import com.interviewmanagementsystem.mapper.CandidateMapper;
+import com.interviewmanagementsystem.repositories.ICandidateRepository;
+import com.interviewmanagementsystem.repositories.IEmployeeRepository;
+import com.interviewmanagementsystem.repositories.ISkillRepository;
 import jakarta.persistence.criteria.Predicate;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;

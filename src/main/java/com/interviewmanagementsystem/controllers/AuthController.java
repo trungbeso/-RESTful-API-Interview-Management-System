@@ -1,10 +1,10 @@
 package com.interviewmanagementsystem.controllers;
 
-import com.ninja_in_pyjamas.dtos.auth.LoginRequestDTO;
-import com.ninja_in_pyjamas.dtos.auth.LoginResponseDTO;
-import com.ninja_in_pyjamas.dtos.auth.RegisterRequestDTO;
-import com.ninja_in_pyjamas.services.auth.AuthService;
-import com.ninja_in_pyjamas.services.auth.token.TokenService;
+import com.interviewmanagementsystem.dtos.auth.LoginRequestDTO;
+import com.interviewmanagementsystem.dtos.auth.LoginResponseDTO;
+import com.interviewmanagementsystem.dtos.auth.RegisterRequestDTO;
+import com.interviewmanagementsystem.services.auth.AuthService;
+import com.interviewmanagementsystem.services.auth.token.TokenService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
@@ -16,6 +16,7 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
+
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 

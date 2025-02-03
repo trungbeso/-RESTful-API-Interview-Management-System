@@ -1,7 +1,7 @@
 package com.interviewmanagementsystem.controllers;
 
-import com.ninja_in_pyjamas.dtos.skills.SkillDTO;
-import com.ninja_in_pyjamas.services.skill.SkillService;
+import com.interviewmanagementsystem.dtos.skills.SkillDTO;
+import com.interviewmanagementsystem.services.skill.SkillService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

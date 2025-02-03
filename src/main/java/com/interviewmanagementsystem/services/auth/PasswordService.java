@@ -1,7 +1,7 @@
 package com.interviewmanagementsystem.services.auth;
 
-import com.ninja_in_pyjamas.entities.PasswordResetToken;
-import com.ninja_in_pyjamas.repositories.IPasswordResetTokenRepository;
+import com.interviewmanagementsystem.entities.PasswordResetToken;
+import com.interviewmanagementsystem.repositories.IPasswordResetTokenRepository;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtException;
 import io.jsonwebtoken.Jwts;

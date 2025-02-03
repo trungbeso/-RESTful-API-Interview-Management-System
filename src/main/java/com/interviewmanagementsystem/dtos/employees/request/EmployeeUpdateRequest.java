@@ -1,6 +1,7 @@
 package com.interviewmanagementsystem.dtos.employees.request;
 
-import com.ninja_in_pyjamas.dtos.MasterCreateUpdateDTO;
+
+import com.interviewmanagementsystem.dtos.MasterCreateUpdateDTO;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 

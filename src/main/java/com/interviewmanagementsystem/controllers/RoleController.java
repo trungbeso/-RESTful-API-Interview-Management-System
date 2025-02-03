@@ -1,6 +1,6 @@
 package com.interviewmanagementsystem.controllers;
 
-import com.ninja_in_pyjamas.services.role.IRoleService;
+import com.interviewmanagementsystem.services.role.IRoleService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;

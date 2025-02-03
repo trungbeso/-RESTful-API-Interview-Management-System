@@ -1,7 +1,9 @@
 package com.interviewmanagementsystem.dtos.interviews;
 
-import com.ninja_in_pyjamas.enums.InterviewResult;
-import com.ninja_in_pyjamas.enums.InterviewStatus;
+
+
+import com.interviewmanagementsystem.enums.InterviewResult;
+import com.interviewmanagementsystem.enums.InterviewStatus;
 import jakarta.validation.constraints.Future;
 import jakarta.validation.constraints.FutureOrPresent;
 import jakarta.validation.constraints.NotBlank;

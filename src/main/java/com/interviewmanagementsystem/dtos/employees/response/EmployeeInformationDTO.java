@@ -1,7 +1,9 @@
 package com.interviewmanagementsystem.dtos.employees.response;
 
-import com.ninja_in_pyjamas.dtos.BaseDTO;
-import com.ninja_in_pyjamas.enums.RoleName;
+
+
+import com.interviewmanagementsystem.dtos.BaseDTO;
+import com.interviewmanagementsystem.enums.RoleName;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

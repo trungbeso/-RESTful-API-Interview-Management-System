@@ -1,6 +1,6 @@
 package com.interviewmanagementsystem.repositories;
 
-import com.ninja_in_pyjamas.entities.Benefit;
+import com.interviewmanagementsystem.entities.Benefit;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Set;

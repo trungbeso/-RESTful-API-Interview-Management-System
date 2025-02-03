@@ -1,6 +1,6 @@
 package com.interviewmanagementsystem.services.role;
 
-import com.ninja_in_pyjamas.dtos.role.RoleMasterDTO;
+import com.interviewmanagementsystem.dtos.role.RoleMasterDTO;
 
 import java.util.List;
 import java.util.UUID;

@@ -1,10 +1,10 @@
 package com.interviewmanagementsystem.controllers;
 
-import com.ninja_in_pyjamas.dtos.auth.PasswordResetRequestDTO;
-import com.ninja_in_pyjamas.dtos.auth.ValidateResetPasswordTokenRequestDTO;
-import com.ninja_in_pyjamas.services.auth.AuthService;
-import com.ninja_in_pyjamas.services.auth.PasswordService;
-import com.ninja_in_pyjamas.services.employee.ChangePasswordRequestDTO;
+import com.interviewmanagementsystem.dtos.auth.PasswordResetRequestDTO;
+import com.interviewmanagementsystem.dtos.auth.ValidateResetPasswordTokenRequestDTO;
+import com.interviewmanagementsystem.services.auth.AuthService;
+import com.interviewmanagementsystem.services.auth.PasswordService;
+import com.interviewmanagementsystem.services.employee.ChangePasswordRequestDTO;
 import io.swagger.v3.oas.annotations.Operation;
 import jakarta.validation.Valid;
 import lombok.AccessLevel;

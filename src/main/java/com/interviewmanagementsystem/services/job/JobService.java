@@ -1,14 +1,12 @@
 package com.interviewmanagementsystem.services.job;
 
-import com.ninja_in_pyjamas.dtos.jobs.JobCreateUpdateDTO;
-import com.ninja_in_pyjamas.dtos.jobs.JobDTO;
-import com.ninja_in_pyjamas.entities.Benefit;
-import com.ninja_in_pyjamas.entities.Job;
-import com.ninja_in_pyjamas.entities.Skill;
-import com.ninja_in_pyjamas.enums.JobStatus;
-import com.ninja_in_pyjamas.repositories.IBenefitRepository;
-import com.ninja_in_pyjamas.repositories.IJobRepository;
-import com.ninja_in_pyjamas.repositories.ISkillRepository;
+import com.interviewmanagementsystem.dtos.jobs.JobCreateUpdateDTO;
+import com.interviewmanagementsystem.dtos.jobs.JobDTO;
+import com.interviewmanagementsystem.entities.Job;
+import com.interviewmanagementsystem.enums.JobStatus;
+import com.interviewmanagementsystem.repositories.IBenefitRepository;
+import com.interviewmanagementsystem.repositories.IJobRepository;
+import com.interviewmanagementsystem.repositories.ISkillRepository;
 import jakarta.persistence.criteria.Predicate;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -16,6 +14,8 @@ import org.springframework.data.jpa.domain.Specification;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import com.interviewmanagementsystem.entities.Skill;
+import com.interviewmanagementsystem.entities.Benefit;
 
 import java.time.LocalDate;
 import java.time.ZonedDateTime;
@@ -48,7 +48,7 @@ public class JobService implements IJobService {
             var status = job.getStatus();
             var checkDate = today.isBefore(startDate);
             if (status.name().equals("DRAFT") && startDate != null && !checkDate) {
-                job.setStatus(JobStatus.OPEN); 
+                job.setStatus(JobStatus.OPEN);
             }
             var checkEndDate =today.isAfter(endDate);
             if (status.name().equals("OPEN") && endDate != null && checkEndDate) {

@@ -1,10 +1,12 @@
 package com.interviewmanagementsystem.dtos.offers;
 
-import com.ninja_in_pyjamas.dtos.candidates.CandidateDTO;
-import com.ninja_in_pyjamas.dtos.departments.DepartmentDTO;
-import com.ninja_in_pyjamas.dtos.employees.response.EmployeeInformationDTO;
-import com.ninja_in_pyjamas.enums.Level;
-import com.ninja_in_pyjamas.enums.OfferStatus;
+
+
+import com.interviewmanagementsystem.dtos.candidates.CandidateDTO;
+import com.interviewmanagementsystem.dtos.departments.DepartmentDTO;
+import com.interviewmanagementsystem.dtos.employees.response.EmployeeInformationDTO;
+import com.interviewmanagementsystem.enums.Level;
+import com.interviewmanagementsystem.enums.OfferStatus;
 import lombok.*;
 
 import java.math.BigDecimal;

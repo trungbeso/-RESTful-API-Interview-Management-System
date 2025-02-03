@@ -1,7 +1,8 @@
 package com.interviewmanagementsystem.mapper;
 
-import com.ninja_in_pyjamas.dtos.benefits.BenefitDTO;
-import com.ninja_in_pyjamas.entities.Benefit;
+
+import com.interviewmanagementsystem.dtos.benefits.BenefitDTO;
+import com.interviewmanagementsystem.entities.Benefit;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingConstants;
 import org.mapstruct.ReportingPolicy;

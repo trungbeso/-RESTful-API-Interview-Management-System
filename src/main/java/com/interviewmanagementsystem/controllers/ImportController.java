@@ -1,7 +1,6 @@
 package com.interviewmanagementsystem.controllers;
-
-import com.ninja_in_pyjamas.dtos.jobs.JobDTO;
-import com.ninja_in_pyjamas.services.job.ExcelJobService;
+import com.interviewmanagementsystem.dtos.jobs.JobDTO;
+import com.interviewmanagementsystem.services.job.ExcelJobService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -11,8 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
-
-
 
 @RestController
 @RequestMapping("/api/jobs")

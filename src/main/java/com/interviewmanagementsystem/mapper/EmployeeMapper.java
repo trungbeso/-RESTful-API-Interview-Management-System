@@ -1,9 +1,10 @@
 package com.interviewmanagementsystem.mapper;
 
-import com.ninja_in_pyjamas.dtos.employees.response.EmployeeInformationDTO;
-import com.ninja_in_pyjamas.entities.Employee;
-import com.ninja_in_pyjamas.entities.Role;
-import com.ninja_in_pyjamas.enums.RoleName;
+
+import com.interviewmanagementsystem.dtos.employees.response.EmployeeInformationDTO;
+import com.interviewmanagementsystem.entities.Employee;
+import com.interviewmanagementsystem.entities.Role;
+import com.interviewmanagementsystem.enums.RoleName;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.MappingConstants;

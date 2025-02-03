@@ -1,7 +1,8 @@
 package com.interviewmanagementsystem.mapper;
 
-import com.ninja_in_pyjamas.dtos.jobs.JobDTO;
-import com.ninja_in_pyjamas.entities.Job;
+
+import com.interviewmanagementsystem.dtos.jobs.JobDTO;
+import com.interviewmanagementsystem.entities.Job;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.MappingConstants;

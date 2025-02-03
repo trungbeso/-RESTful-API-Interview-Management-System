@@ -1,10 +1,10 @@
 package com.interviewmanagementsystem.services.job;
 
-import com.ninja_in_pyjamas.dtos.jobs.JobDTO;
-import com.ninja_in_pyjamas.entities.Job;
-import com.ninja_in_pyjamas.enums.JobStatus;
-import com.ninja_in_pyjamas.enums.Level;
-import com.ninja_in_pyjamas.repositories.IJobRepository;
+import com.interviewmanagementsystem.dtos.jobs.JobDTO;
+import com.interviewmanagementsystem.entities.Job;
+import com.interviewmanagementsystem.enums.JobStatus;
+import com.interviewmanagementsystem.enums.Level;
+import com.interviewmanagementsystem.repositories.IJobRepository;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.beans.factory.annotation.Autowired;

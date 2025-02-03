@@ -1,10 +1,11 @@
 package com.interviewmanagementsystem.mapper;
 
-import com.ninja_in_pyjamas.dtos.offers.OfferCreateUpdateDTO;
-import com.ninja_in_pyjamas.dtos.offers.OfferDTO;
-import com.ninja_in_pyjamas.entities.Offer;
-import com.ninja_in_pyjamas.entities.Role;
-import com.ninja_in_pyjamas.enums.RoleName;
+
+import com.interviewmanagementsystem.dtos.offers.OfferCreateUpdateDTO;
+import com.interviewmanagementsystem.dtos.offers.OfferDTO;
+import com.interviewmanagementsystem.entities.Offer;
+import com.interviewmanagementsystem.entities.Role;
+import com.interviewmanagementsystem.enums.RoleName;
 import org.mapstruct.*;
 
 import java.util.Set;
