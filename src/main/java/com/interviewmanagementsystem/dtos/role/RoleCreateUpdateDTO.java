@@ -1,6 +1,7 @@
 package com.interviewmanagementsystem.dtos.role;
 
-import com.ninja_in_pyjamas.dtos.MasterCreateUpdateDTO;
+
+import com.interviewmanagementsystem.dtos.MasterCreateUpdateDTO;
 import jakarta.validation.constraints.NotBlank;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

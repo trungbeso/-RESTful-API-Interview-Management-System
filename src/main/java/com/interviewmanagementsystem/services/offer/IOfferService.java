@@ -1,8 +1,8 @@
 package com.interviewmanagementsystem.services.offer;
 
-import com.ninja_in_pyjamas.dtos.offers.OfferCreateUpdateDTO;
-import com.ninja_in_pyjamas.dtos.offers.OfferDTO;
-import com.ninja_in_pyjamas.enums.OfferStatus;
+import com.interviewmanagementsystem.dtos.offers.OfferCreateUpdateDTO;
+import com.interviewmanagementsystem.dtos.offers.OfferDTO;
+import com.interviewmanagementsystem.enums.OfferStatus;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 

@@ -1,7 +1,8 @@
 package com.interviewmanagementsystem.services.department;
 
-import com.ninja_in_pyjamas.dtos.departments.DepartmentCreateUpdateDTO;
-import com.ninja_in_pyjamas.dtos.departments.DepartmentDTO;
+
+import com.interviewmanagementsystem.dtos.departments.DepartmentCreateUpdateDTO;
+import com.interviewmanagementsystem.dtos.departments.DepartmentDTO;
 
 import java.util.List;
 import java.util.UUID;

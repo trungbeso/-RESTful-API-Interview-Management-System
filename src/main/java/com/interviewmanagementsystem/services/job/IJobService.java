@@ -1,7 +1,7 @@
 package com.interviewmanagementsystem.services.job;
 
-import com.ninja_in_pyjamas.dtos.jobs.JobCreateUpdateDTO;
-import com.ninja_in_pyjamas.dtos.jobs.JobDTO;
+import com.interviewmanagementsystem.dtos.jobs.JobCreateUpdateDTO;
+import com.interviewmanagementsystem.dtos.jobs.JobDTO;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 

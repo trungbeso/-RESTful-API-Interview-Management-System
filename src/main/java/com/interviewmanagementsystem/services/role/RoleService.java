@@ -1,9 +1,9 @@
 package com.interviewmanagementsystem.services.role;
 
-import com.ninja_in_pyjamas.dtos.role.RoleMasterDTO;
-import com.ninja_in_pyjamas.entities.Role;
-import com.ninja_in_pyjamas.mapper.RoleMapper;
-import com.ninja_in_pyjamas.repositories.IRoleRepository;
+import com.interviewmanagementsystem.dtos.role.RoleMasterDTO;
+import com.interviewmanagementsystem.entities.Role;
+import com.interviewmanagementsystem.mapper.RoleMapper;
+import com.interviewmanagementsystem.repositories.IRoleRepository;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 

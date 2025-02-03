@@ -1,7 +1,7 @@
 package com.interviewmanagementsystem.mapper;
 
-import com.ninja_in_pyjamas.dtos.skills.SkillDTO;
-import com.ninja_in_pyjamas.entities.Skill;
+import com.interviewmanagementsystem.dtos.skills.SkillDTO;
+import com.interviewmanagementsystem.entities.Skill;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingConstants;
 import org.mapstruct.ReportingPolicy;

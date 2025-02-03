@@ -1,7 +1,8 @@
 package com.interviewmanagementsystem.repositories;
 
-import com.ninja_in_pyjamas.entities.Offer;
-import com.ninja_in_pyjamas.enums.OfferStatus;
+
+import com.interviewmanagementsystem.entities.Offer;
+import com.interviewmanagementsystem.enums.OfferStatus;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;

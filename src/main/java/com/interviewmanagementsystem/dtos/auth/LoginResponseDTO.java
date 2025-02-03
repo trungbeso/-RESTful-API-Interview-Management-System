@@ -1,6 +1,8 @@
 package com.interviewmanagementsystem.dtos.auth;
 
-import com.ninja_in_pyjamas.dtos.employees.response.EmployeeInformationDTO;
+
+
+import com.interviewmanagementsystem.dtos.employees.response.EmployeeInformationDTO;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 

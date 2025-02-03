@@ -1,9 +1,9 @@
 package com.interviewmanagementsystem.services.interview;
 
-import com.ninja_in_pyjamas.dtos.interviews.InterviewCreateUpdateDTO;
-import com.ninja_in_pyjamas.dtos.interviews.InterviewDTO;
-import com.ninja_in_pyjamas.enums.InterviewResult;
-import com.ninja_in_pyjamas.enums.InterviewStatus;
+import com.interviewmanagementsystem.dtos.interviews.InterviewCreateUpdateDTO;
+import com.interviewmanagementsystem.dtos.interviews.InterviewDTO;
+import com.interviewmanagementsystem.enums.InterviewResult;
+import com.interviewmanagementsystem.enums.InterviewStatus;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 

@@ -1,6 +1,7 @@
 package com.interviewmanagementsystem.repositories;
 
-import com.ninja_in_pyjamas.entities.PasswordResetToken;
+
+import com.interviewmanagementsystem.entities.PasswordResetToken;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

@@ -1,8 +1,8 @@
 package com.interviewmanagementsystem.services.candidate;
 
-import com.ninja_in_pyjamas.dtos.candidates.CandidateCreateUpdateDTO;
-import com.ninja_in_pyjamas.dtos.candidates.CandidateDTO;
-import com.ninja_in_pyjamas.enums.CandidateStatus;
+import com.interviewmanagementsystem.dtos.candidates.CandidateCreateUpdateDTO;
+import com.interviewmanagementsystem.dtos.candidates.CandidateDTO;
+import com.interviewmanagementsystem.enums.CandidateStatus;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
@@ -20,7 +20,7 @@ public interface ICandidateService {
 
     boolean delete(UUID id);
 
-    Page<CandidateDTO> search(String fullName,CandidateStatus status, UUID recruiterId, Pageable pageable);
+    Page<CandidateDTO> search(String fullName, CandidateStatus status, UUID recruiterId, Pageable pageable);
 
     List<CandidateDTO> searchByFullName(String fullName);
 

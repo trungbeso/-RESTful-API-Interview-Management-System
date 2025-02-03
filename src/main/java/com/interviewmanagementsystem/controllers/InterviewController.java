@@ -1,11 +1,11 @@
 package com.interviewmanagementsystem.controllers;
 
-import com.ninja_in_pyjamas.dtos.interviews.InterviewCreateUpdateDTO;
-import com.ninja_in_pyjamas.dtos.interviews.InterviewDTO;
-import com.ninja_in_pyjamas.enums.InterviewResult;
-import com.ninja_in_pyjamas.enums.InterviewStatus;
-import com.ninja_in_pyjamas.services.interview.IInterviewService;
-import com.ninja_in_pyjamas.utils.CustomPagedResponse;
+import com.interviewmanagementsystem.dtos.interviews.InterviewCreateUpdateDTO;
+import com.interviewmanagementsystem.dtos.interviews.InterviewDTO;
+import com.interviewmanagementsystem.enums.InterviewResult;
+import com.interviewmanagementsystem.enums.InterviewStatus;
+import com.interviewmanagementsystem.mapper.CustomPagedResponse;
+import com.interviewmanagementsystem.services.interview.IInterviewService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;

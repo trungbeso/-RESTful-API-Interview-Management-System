@@ -1,6 +1,7 @@
 package com.interviewmanagementsystem.entities;
 
-import com.ninja_in_pyjamas.enums.RoleName;
+
+import com.interviewmanagementsystem.enums.RoleName;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

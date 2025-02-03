@@ -1,9 +1,9 @@
 package com.interviewmanagementsystem.services.skill;
 
-import com.ninja_in_pyjamas.dtos.skills.SkillDTO;
-import com.ninja_in_pyjamas.entities.Skill;
-import com.ninja_in_pyjamas.mapper.SkillMapper;
-import com.ninja_in_pyjamas.repositories.ISkillRepository;
+import com.interviewmanagementsystem.dtos.skills.SkillDTO;
+import com.interviewmanagementsystem.entities.Skill;
+import com.interviewmanagementsystem.mapper.SkillMapper;
+import com.interviewmanagementsystem.repositories.ISkillRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

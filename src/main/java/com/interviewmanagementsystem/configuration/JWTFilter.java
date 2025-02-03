@@ -1,6 +1,6 @@
 package com.interviewmanagementsystem.configuration;
 
-import com.ninja_in_pyjamas.services.auth.token.ITokenService;
+import com.interviewmanagementsystem.services.auth.token.ITokenService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.ServletRequest;

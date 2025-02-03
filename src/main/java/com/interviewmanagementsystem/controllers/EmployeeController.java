@@ -1,11 +1,11 @@
 package com.interviewmanagementsystem.controllers;
 
-import com.ninja_in_pyjamas.dtos.employees.request.ChangePasswordDTO;
-import com.ninja_in_pyjamas.dtos.employees.request.EmployeeCreationRequest;
-import com.ninja_in_pyjamas.dtos.employees.request.EmployeeUpdateRequest;
-import com.ninja_in_pyjamas.dtos.employees.response.EmployeeMasterDTO;
-import com.ninja_in_pyjamas.mapper.CustomPagedResponse;
-import com.ninja_in_pyjamas.services.employee.EmployeeService;
+import com.interviewmanagementsystem.dtos.employees.request.ChangePasswordDTO;
+import com.interviewmanagementsystem.dtos.employees.request.EmployeeCreationRequest;
+import com.interviewmanagementsystem.dtos.employees.request.EmployeeUpdateRequest;
+import com.interviewmanagementsystem.dtos.employees.response.EmployeeMasterDTO;
+import com.interviewmanagementsystem.mapper.CustomPagedResponse;
+import com.interviewmanagementsystem.services.employee.EmployeeService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;

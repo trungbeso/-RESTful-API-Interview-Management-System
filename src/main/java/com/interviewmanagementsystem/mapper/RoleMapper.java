@@ -1,10 +1,9 @@
 package com.interviewmanagementsystem.mapper;
 
-
-import com.ninja_in_pyjamas.dtos.role.RoleCreateUpdateDTO;
-import com.ninja_in_pyjamas.dtos.role.RoleDTO;
-import com.ninja_in_pyjamas.dtos.role.RoleMasterDTO;
-import com.ninja_in_pyjamas.entities.Role;
+import com.interviewmanagementsystem.dtos.role.RoleCreateUpdateDTO;
+import com.interviewmanagementsystem.dtos.role.RoleDTO;
+import com.interviewmanagementsystem.dtos.role.RoleMasterDTO;
+import com.interviewmanagementsystem.entities.Role;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.MappingConstants;

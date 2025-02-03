@@ -1,9 +1,9 @@
 package com.interviewmanagementsystem.services.benefit;
 
-import com.ninja_in_pyjamas.dtos.benefits.BenefitDTO;
-import com.ninja_in_pyjamas.entities.Benefit;
-import com.ninja_in_pyjamas.mapper.BenefitMapper;
-import com.ninja_in_pyjamas.repositories.IBenefitRepository;
+import com.interviewmanagementsystem.dtos.benefits.BenefitDTO;
+import com.interviewmanagementsystem.entities.Benefit;
+import com.interviewmanagementsystem.mapper.BenefitMapper;
+import com.interviewmanagementsystem.repositories.IBenefitRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

@@ -1,8 +1,8 @@
 package com.interviewmanagementsystem.controllers;
 
-import com.ninja_in_pyjamas.dtos.departments.DepartmentCreateUpdateDTO;
-import com.ninja_in_pyjamas.dtos.departments.DepartmentDTO;
-import com.ninja_in_pyjamas.services.department.IDepartmentService;
+import com.interviewmanagementsystem.dtos.departments.DepartmentCreateUpdateDTO;
+import com.interviewmanagementsystem.dtos.departments.DepartmentDTO;
+import com.interviewmanagementsystem.services.department.IDepartmentService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.parameters.RequestBody;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;

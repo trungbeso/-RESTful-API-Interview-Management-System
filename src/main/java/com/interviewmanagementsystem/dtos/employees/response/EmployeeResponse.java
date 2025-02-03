@@ -1,6 +1,8 @@
 package com.interviewmanagementsystem.dtos.employees.response;
 
-import com.ninja_in_pyjamas.dtos.MasterDTO;
+
+
+import com.interviewmanagementsystem.dtos.MasterDTO;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 

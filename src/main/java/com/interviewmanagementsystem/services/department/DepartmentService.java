@@ -1,10 +1,10 @@
 package com.interviewmanagementsystem.services.department;
 
-import com.ninja_in_pyjamas.dtos.departments.DepartmentCreateUpdateDTO;
-import com.ninja_in_pyjamas.dtos.departments.DepartmentDTO;
-import com.ninja_in_pyjamas.entities.Department;
-import com.ninja_in_pyjamas.mapper.DepartmentMapper;
-import com.ninja_in_pyjamas.repositories.IDepartmentRepository;
+import com.interviewmanagementsystem.dtos.departments.DepartmentCreateUpdateDTO;
+import com.interviewmanagementsystem.dtos.departments.DepartmentDTO;
+import com.interviewmanagementsystem.entities.Department;
+import com.interviewmanagementsystem.mapper.DepartmentMapper;
+import com.interviewmanagementsystem.repositories.IDepartmentRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

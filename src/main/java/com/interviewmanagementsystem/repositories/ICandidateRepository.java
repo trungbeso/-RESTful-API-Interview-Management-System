@@ -1,6 +1,6 @@
 package com.interviewmanagementsystem.repositories;
 
-import com.ninja_in_pyjamas.entities.Candidate;
+import com.interviewmanagementsystem.entities.Candidate;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;

@@ -1,6 +1,6 @@
 package com.interviewmanagementsystem.repositories;
 
-import com.ninja_in_pyjamas.entities.Employee;
+import com.interviewmanagementsystem.entities.Employee;
 import jakarta.transaction.Transactional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;

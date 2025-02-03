@@ -1,7 +1,8 @@
 package com.interviewmanagementsystem.repositories;
 
-import com.ninja_in_pyjamas.entities.Job;
-import com.ninja_in_pyjamas.enums.JobStatus;
+
+import com.interviewmanagementsystem.entities.Job;
+import com.interviewmanagementsystem.enums.JobStatus;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

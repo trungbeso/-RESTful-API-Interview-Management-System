@@ -4,8 +4,10 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateTimeDeserializer;
 import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer;
-import com.ninja_in_pyjamas.enums.JobStatus;
-import com.ninja_in_pyjamas.enums.Level;
+
+
+import com.interviewmanagementsystem.enums.JobStatus;
+import com.interviewmanagementsystem.enums.Level;
 import jakarta.validation.constraints.*;
 import lombok.*;
 import org.hibernate.validator.constraints.Length;

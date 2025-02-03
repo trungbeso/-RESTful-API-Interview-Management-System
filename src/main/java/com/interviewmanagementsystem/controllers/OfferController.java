@@ -1,10 +1,10 @@
 package com.interviewmanagementsystem.controllers;
 
-import com.ninja_in_pyjamas.dtos.offers.OfferCreateUpdateDTO;
-import com.ninja_in_pyjamas.dtos.offers.OfferDTO;
-import com.ninja_in_pyjamas.enums.OfferStatus;
-import com.ninja_in_pyjamas.mapper.CustomPagedResponse;
-import com.ninja_in_pyjamas.services.offer.IOfferService;
+import com.interviewmanagementsystem.dtos.offers.OfferCreateUpdateDTO;
+import com.interviewmanagementsystem.dtos.offers.OfferDTO;
+import com.interviewmanagementsystem.enums.OfferStatus;
+import com.interviewmanagementsystem.mapper.CustomPagedResponse;
+import com.interviewmanagementsystem.services.offer.IOfferService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;

@@ -1,7 +1,8 @@
 package com.interviewmanagementsystem.entities;
 
-import com.ninja_in_pyjamas.enums.InterviewResult;
-import com.ninja_in_pyjamas.enums.InterviewStatus;
+
+import com.interviewmanagementsystem.enums.InterviewResult;
+import com.interviewmanagementsystem.enums.InterviewStatus;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,7 +1,9 @@
 package com.interviewmanagementsystem.dtos.offers;
 
-import com.ninja_in_pyjamas.enums.Level;
-import com.ninja_in_pyjamas.enums.OfferStatus;
+
+
+import com.interviewmanagementsystem.enums.Level;
+import com.interviewmanagementsystem.enums.OfferStatus;
 import jakarta.validation.constraints.*;
 import lombok.*;
 import org.hibernate.validator.constraints.Length;

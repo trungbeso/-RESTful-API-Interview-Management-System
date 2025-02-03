@@ -1,9 +1,11 @@
 package com.interviewmanagementsystem.dtos.interviews;
 
-import com.ninja_in_pyjamas.dtos.candidates.CandidateDTO;
-import com.ninja_in_pyjamas.dtos.employees.response.EmployeeInformationDTO;
-import com.ninja_in_pyjamas.dtos.jobs.JobDTO;
-import com.ninja_in_pyjamas.enums.InterviewStatus;
+
+
+import com.interviewmanagementsystem.dtos.candidates.CandidateDTO;
+import com.interviewmanagementsystem.dtos.employees.response.EmployeeInformationDTO;
+import com.interviewmanagementsystem.dtos.jobs.JobDTO;
+import com.interviewmanagementsystem.enums.InterviewStatus;
 import lombok.*;
 
 import java.time.ZonedDateTime;

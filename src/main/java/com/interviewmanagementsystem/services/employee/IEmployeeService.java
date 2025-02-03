@@ -1,10 +1,10 @@
 package com.interviewmanagementsystem.services.employee;
 
-import com.ninja_in_pyjamas.dtos.employees.request.ChangePasswordDTO;
-import com.ninja_in_pyjamas.dtos.employees.request.EmployeeCreationRequest;
-import com.ninja_in_pyjamas.dtos.employees.request.EmployeeUpdateRequest;
-import com.ninja_in_pyjamas.dtos.employees.response.EmployeeMasterDTO;
-import com.ninja_in_pyjamas.entities.Employee;
+import com.interviewmanagementsystem.dtos.employees.request.ChangePasswordDTO;
+import com.interviewmanagementsystem.dtos.employees.request.EmployeeCreationRequest;
+import com.interviewmanagementsystem.dtos.employees.request.EmployeeUpdateRequest;
+import com.interviewmanagementsystem.dtos.employees.response.EmployeeMasterDTO;
+import com.interviewmanagementsystem.entities.Employee;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 

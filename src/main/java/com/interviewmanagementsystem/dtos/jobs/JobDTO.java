@@ -1,8 +1,10 @@
 package com.interviewmanagementsystem.dtos.jobs;
 
-import com.ninja_in_pyjamas.dtos.MasterDTO;
-import com.ninja_in_pyjamas.enums.JobStatus;
-import com.ninja_in_pyjamas.enums.Level;
+
+
+import com.interviewmanagementsystem.dtos.MasterDTO;
+import com.interviewmanagementsystem.enums.JobStatus;
+import com.interviewmanagementsystem.enums.Level;
 import jakarta.persistence.ElementCollection;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
