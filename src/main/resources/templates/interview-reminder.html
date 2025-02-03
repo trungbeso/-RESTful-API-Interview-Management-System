@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Interview Reminder</title>
+	</head>
+	<body>
+		<p th:text="'Dear ' + ${interviewerName} + ','">Dear Interviewer,</p>
+		<p>This is a reminder for the upcoming interview.</p>
+		<p>
+			<strong>Candidate Name:</strong>
+			<span th:text="${candidateName}">John Doe</span>
+		</p>
+		<p>
+			<strong>Job Title:</strong>
+			<span th:text="${jobTitle}">Software Engineer</span>
+		</p>
+		<p>
+			<strong>Scheduled Time:</strong>
+			<span th:text="${schedule}">January 15, 2025, 10:00 AM</span>
+		</p>
+		<p>Thank you!</p>
+	</body>
+</html>
