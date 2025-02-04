@@ -18,13 +18,13 @@ The Interview Management System is designed to streamline the interview process 
 - **Framework:**
   - Spring Boot 3.4.1
   - Spring Data JPA
-  - Spring Security
   - Hibernate
 - **Security:** Spring Security with JWT
 - **Java Version:** 21
 - **Additional Libraries:**
     - Lombok
-    - ModelMapper
+    - Mapstruct
+    - Apache POI
     - JJWT
     - Spring HATEOAS
     - Thymeleaf
